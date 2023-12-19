@@ -1,14 +1,16 @@
 const express = require('express')
 const productController = require('../Controllers/productsController')
-
+const userController = require('../Controllers/userController')
 
 const router = new express.Router()
 
 // get all products
 router.get('/products/all',productController.getAllProductsController)
 
+// register
+router.post('/user/register',userController.registerController)
 
-
-
+// login
+router.post('/user/login',userController.loginController)
 
 module.exports = router
