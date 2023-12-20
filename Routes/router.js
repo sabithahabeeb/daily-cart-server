@@ -16,7 +16,8 @@ router.post('/user/login',userController.loginController)
 
 // getproduct
 router.get('/product/get/:id',productController.getProductController)
-// addwishlist
+
+// addtowishlist
 router.get('/wishlist/add/:id',jwtMiddleware,wishlistController.addTowishlistController)
 
 
