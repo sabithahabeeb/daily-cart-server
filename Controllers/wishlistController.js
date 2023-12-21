@@ -41,5 +41,6 @@ exports.removeWishlistController = async (req,res)=>{
         res.status(200).json(removeItem)
     }catch(err){
         console.log(err);
-         res.status(401).json(err)}
+         res.status(401).json(err)
+        }
 }
